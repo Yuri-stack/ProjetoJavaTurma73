@@ -11,9 +11,9 @@ public class EntradaSaida {
 		int idade;
 		float salario = 5000.0f;
 		
-		// Entrada de Dados
 		Scanner leia = new Scanner(System.in);
-				
+		
+		// Entrada de Dados
 		System.out.print("Insira o seu nome: ");
 		nome = leia.next();
 				
@@ -22,11 +22,15 @@ public class EntradaSaida {
 		
 		System.out.print("Insira o seu salário: ");
 		salario = leia.nextFloat();
+		
+		leia.close();
 								
 		// concatenação: juntar um texto com 1 ou mais variaveis/constantes
+		
 		// Saída de Dados
-		System.out.println("Bom dia, " + nome);
-		System.out.println("A sua idade é " + idade + " anos.");
+		System.out.println("\nBom dia, " + nome);
+		System.out.println("A sua idade é " + idade + " anos");
+		System.out.printf("O seu salário é: R$%.2f", salario);
 				
 	}
 
