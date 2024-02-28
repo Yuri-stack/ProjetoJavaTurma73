@@ -1,0 +1,45 @@
+package laco_repeticao;
+
+import java.util.Scanner;
+
+public class ExemploWhile {
+
+	public static void main(String[] args) {
+
+		String continua = "s";
+		int numero1, numero2, resultado;
+		Scanner leia = new Scanner(System.in);
+
+		// continua é igual a n? => continua == "n" XXXXXXX
+		
+		// continua.equals("n") => continuar["s"] é igual a "n" ? False
+		
+		// ! == False => True | !continua.equals("n") => True
+
+		// (7 == 8) => false 
+		// !(7 == 8) => true
+		
+		while (continua.equals("s")) {
+			
+			System.out.println("Digite primeiro valor: ");
+			numero1 = leia.nextInt();
+
+			System.out.println("Digite segundo valor: ");
+			numero2 = leia.nextInt();
+
+			resultado = numero1 + numero2;
+
+			System.out.println("O resultado da soma é: " + resultado);
+
+			System.out.println("\n++++++++++++++++MENU++++++++++++++++++");
+			System.out.println("\nDeseja somar dois valores?");
+			
+			System.out.println("\nDigite s para sim OU digite n para não: ");
+			continua = leia.next();
+			System.out.println("++++++++++++++++++++++++++++++++++");
+			
+		}
+
+	}
+
+}
