@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class ExercicioVetor {
 
 	public static void main(String[] args) {
-		int[] vetor = new int[10];
 		
+		int[] vetor = new int[10];
+			
 		//As variáveis para calcular a soma e média devem ser float
 		// pq senão o cálculo da média será arredondado
 		float soma = 0.0f, media = 0.0f;
