@@ -11,33 +11,25 @@ public class ExemploMetodo01 {
 		
 		System.out.println("O primeiro resultado é: " + resultado);
 		
+		// Executando Método c/ Retorno e com Parametro 
 		System.out.println("O segundo resultado é: " + somar(8,3));
 		
-		ExemploMetodo02.mensagem();
+		// Executando Método s/ Retorno e sem Parametro
+		ExemploMetodo02.mensagem();	// Estamos importando esse método do outro Arquivo
 		
-		ExemploMetodo02.saudacao("\nOi, sei lá");
-		ExemploMetodo02.saudacao("Bom dia");
-		
-		
-		/* Métodos
-		 * 
-		 * Métodos c/ Retorno: Funções
-		 * Métodos s/ Retorno: Processamentos
-		 * 
-		 * */
-		
+		// Executando Método s/ Retorno e com Parametro 
+		saudacao("\nOi, sei lá");
+		saudacao("Bom dia");		
 	}
 	
-	// valor1 + valo2 = resultado
+	// Criando o método c/ retorno e c/ parametro
 	public static int somar(int num1, int num2) {
 		return num1 + num2;
 	}
-			
-	/*
-	public static int somar(int num1, int num2) {
-		int resultado = num1 + num2;
-		
-		return resultado;
-	}*/
+	
+	// Criando o método s/ retorno e c/ parametro
+	public static void saudacao(String mensagem) {
+		System.out.println(mensagem);
+	}
 
 }
